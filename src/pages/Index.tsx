@@ -76,17 +76,17 @@ const Index = () => {
     {
       name: 'Michael Thompson',
       position: 'Professional Bettor',
-      quote: 'GunsTips has completely transformed my approach to horse race betting. The accuracy of their predictions is truly remarkable.'
+      quote: "GunsTips has completely transformed my approach to horse race betting. The accuracy of their predictions is truly remarkable."
     },
     {
       name: 'Sarah Johnson',
       position: 'Racing Enthusiast',
-      quote: 'I've tried many tipping services, but none come close to the consistency of GunsTips. It's worth every penny.'
+      quote: "I've tried many tipping services, but none come close to the consistency of GunsTips. It's worth every penny."
     },
     {
       name: 'Robert Chen',
       position: 'Weekend Punter',
-      quote: 'What I love most is how easy it is to use. The interface is intuitive and the tips are explained clearly with detailed reasoning.'
+      quote: "What I love most is how easy it is to use. The interface is intuitive and the tips are explained clearly with detailed reasoning."
     }
   ];
 
