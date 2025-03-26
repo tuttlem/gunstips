@@ -29,12 +29,12 @@ const Navbar = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'py-3 bg-white/90 shadow-sm backdrop-blur-lg' : 'py-5 bg-transparent'
+        isScrolled ? 'py-3 bg-navy-900/90 shadow-md backdrop-blur-lg' : 'py-5 bg-transparent'
       }`}
     >
       <div className="container flex items-center justify-between">
         <a href="#" className="flex items-center gap-2">
-          <span className="text-2xl font-bold text-navy-900">Guns<span className="text-gold-500">Tips</span></span>
+          <span className="text-2xl font-bold text-white">Guns<span className="text-purple-500">Tips</span></span>
         </a>
 
         {/* Desktop Navigation */}
@@ -44,7 +44,7 @@ const Navbar = () => {
               <li key={link.name}>
                 <a
                   href={link.href}
-                  className="text-navy-800 font-medium hover:text-navy-900 transition-colors"
+                  className="text-gray-300 font-medium hover:text-white transition-colors"
                 >
                   {link.name}
                 </a>
@@ -62,7 +62,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-navy-900"
+          className="md:hidden text-white"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -71,14 +71,14 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-md py-4 animate-fade-in">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-navy-800 shadow-md py-4 animate-fade-in">
           <div className="container">
             <ul className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="block py-2 text-navy-800 font-medium hover:text-navy-900 transition-colors"
+                    className="block py-2 text-gray-300 font-medium hover:text-white transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {link.name}

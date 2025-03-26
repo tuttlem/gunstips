@@ -98,14 +98,14 @@ const Index = () => {
         <HeroSection />
         
         {/* Features Section */}
-        <section id="features" className="section-padding bg-white">
+        <section id="features" className="section-padding bg-navy-900">
           <div className="container">
             <div className="text-center max-w-3xl mx-auto mb-16 animate-on-scroll">
-              <span className="inline-block py-1 px-3 rounded-full bg-navy-100 text-navy-900 font-medium text-sm mb-3">
+              <span className="inline-block py-1 px-3 rounded-full bg-purple-900/50 text-purple-300 font-medium text-sm mb-3">
                 Features
               </span>
               <h2 className="heading-lg mb-4">Everything You Need for Successful Betting</h2>
-              <p className="body-md text-navy-700">
+              <p className="body-md text-gray-300">
                 Our comprehensive suite of tools and insights provides everything you need to make informed betting decisions.
               </p>
             </div>
@@ -125,14 +125,14 @@ const Index = () => {
         </section>
         
         {/* Testimonials Section */}
-        <section id="testimonials" className="section-padding bg-gray-50">
+        <section id="testimonials" className="section-padding bg-navy-800">
           <div className="container">
             <div className="text-center max-w-3xl mx-auto mb-16 animate-on-scroll">
-              <span className="inline-block py-1 px-3 rounded-full bg-navy-100 text-navy-900 font-medium text-sm mb-3">
+              <span className="inline-block py-1 px-3 rounded-full bg-purple-900/50 text-purple-300 font-medium text-sm mb-3">
                 Testimonials
               </span>
               <h2 className="heading-lg mb-4">What Our Users Say</h2>
-              <p className="body-md text-navy-700">
+              <p className="body-md text-gray-300">
                 Join thousands of satisfied users who have transformed their betting experience with GunsTips.
               </p>
             </div>
@@ -152,16 +152,16 @@ const Index = () => {
         </section>
         
         {/* Call to Action */}
-        <section className="section-padding bg-white">
+        <section className="section-padding bg-navy-900">
           <div className="container">
             <div className="max-w-4xl mx-auto text-center animate-on-scroll">
               <h2 className="heading-lg mb-6">Ready to Start Winning?</h2>
-              <p className="body-md text-navy-700 mb-8 max-w-2xl mx-auto">
+              <p className="body-md text-gray-300 mb-8 max-w-2xl mx-auto">
                 Join thousands of successful bettors who have already discovered the GunsTips advantage. Get started today and see the difference for yourself.
               </p>
               <a 
                 href="#" 
-                className="inline-block bg-gold-500 text-navy-900 py-3 px-8 rounded-md font-medium hover:bg-gold-600 transition-colors"
+                className="inline-block bg-purple-600 text-white py-3 px-8 rounded-md font-medium hover:bg-purple-700 transition-colors"
               >
                 Start Your Free Trial
               </a>
