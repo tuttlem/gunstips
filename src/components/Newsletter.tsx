@@ -23,7 +23,7 @@ const Newsletter = () => {
     <section className="bg-navy-900 py-16 relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_top_right,#F59E0B,transparent_40%)]"></div>
-        <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_bottom_left,#4F46E5,transparent_40%)]"></div>
+        <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_bottom_left,#F59E0B,transparent_40%)]"></div>
       </div>
       
       <div className="container relative z-10">
@@ -40,7 +40,7 @@ const Newsletter = () => {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
               required
-              className="flex-grow px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-500"
+              className="flex-grow px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400"
             />
             <Button
               type="submit"

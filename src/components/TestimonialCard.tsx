@@ -19,20 +19,20 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, position, quote
           <path d="M26 18V14.6667C26 11.7211 23.6122 9.33333 20.6667 9.33333" stroke="#F59E0B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </div>
-      <p className="text-navy-800 italic mb-6 flex-grow">{quote}</p>
+      <p className="text-gray-200 italic mb-6 flex-grow">{quote}</p>
       <div className="flex items-center gap-3">
-        <div className="w-10 h-10 rounded-full bg-navy-200 overflow-hidden">
+        <div className="w-10 h-10 rounded-full bg-orange-400/20 overflow-hidden">
           {image ? (
             <img src={image} alt={name} className="w-full h-full object-cover" />
           ) : (
-            <div className="w-full h-full bg-navy-300 flex items-center justify-center">
+            <div className="w-full h-full bg-orange-400/30 flex items-center justify-center">
               <span className="text-white text-sm font-medium">{name.charAt(0)}</span>
             </div>
           )}
         </div>
         <div>
-          <h4 className="font-semibold text-navy-900">{name}</h4>
-          <p className="text-sm text-navy-600">{position}</p>
+          <h4 className="font-semibold text-white">{name}</h4>
+          <p className="text-sm text-gray-400">{position}</p>
         </div>
       </div>
     </div>

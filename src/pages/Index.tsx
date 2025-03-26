@@ -101,7 +101,7 @@ const Index = () => {
         <section id="features" className="section-padding bg-navy-900">
           <div className="container">
             <div className="text-center max-w-3xl mx-auto mb-16 animate-on-scroll">
-              <span className="inline-block py-1 px-3 rounded-full bg-purple-900/50 text-purple-300 font-medium text-sm mb-3">
+              <span className="inline-block py-1 px-3 rounded-full bg-orange-900/50 text-orange-300 font-medium text-sm mb-3">
                 Features
               </span>
               <h2 className="heading-lg mb-4">Everything You Need for Successful Betting</h2>
@@ -128,7 +128,7 @@ const Index = () => {
         <section id="testimonials" className="section-padding bg-navy-800">
           <div className="container">
             <div className="text-center max-w-3xl mx-auto mb-16 animate-on-scroll">
-              <span className="inline-block py-1 px-3 rounded-full bg-purple-900/50 text-purple-300 font-medium text-sm mb-3">
+              <span className="inline-block py-1 px-3 rounded-full bg-orange-900/50 text-orange-300 font-medium text-sm mb-3">
                 Testimonials
               </span>
               <h2 className="heading-lg mb-4">What Our Users Say</h2>
@@ -161,7 +161,7 @@ const Index = () => {
               </p>
               <a 
                 href="#" 
-                className="inline-block bg-purple-600 text-white py-3 px-8 rounded-md font-medium hover:bg-purple-700 transition-colors"
+                className="inline-block bg-orange-400 text-white py-3 px-8 rounded-md font-medium hover:bg-orange-500 transition-colors"
               >
                 Start Your Free Trial
               </a>

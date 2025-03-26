@@ -48,15 +48,15 @@ const HeroSection = () => {
       ></div>
 
       <div className="container relative z-10 flex flex-col items-center lg:items-start text-center lg:text-left space-y-10 py-16" ref={elementRef}>
-        <div className="absolute -top-10 -right-10 w-64 h-64 bg-purple-600/20 rounded-full blur-3xl"></div>
+        <div className="absolute -top-10 -right-10 w-64 h-64 bg-orange-400/20 rounded-full blur-3xl"></div>
         <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-navy-400/10 rounded-full blur-3xl"></div>
         
-        <span className="inline-block py-1 px-3 rounded-full bg-purple-900/50 text-purple-300 font-medium text-sm">
+        <span className="inline-block py-1 px-3 rounded-full bg-orange-900/50 text-orange-300 font-medium text-sm">
           #1 Horse Racing Tips
         </span>
         
         <h1 className="heading-xl max-w-4xl">
-          Win Big with Expert <span className="text-purple-500">Horse Racing</span> Tips
+          Win Big with Expert <span className="text-orange-400">Horse Racing</span> Tips
         </h1>
         
         <p className="body-lg max-w-2xl">
