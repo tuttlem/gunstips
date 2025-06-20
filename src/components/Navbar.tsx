@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Button from './Button';
 
 const Navbar = () => {
@@ -25,6 +26,10 @@ const Navbar = () => {
     { name: 'Features', href: '#features' },
     { name: 'Testimonials', href: '#testimonials' },
   ];
+
+  // Generate today's date for the tips URL
+  const today = new Date();
+  const todayTipsUrl = `/tips/${today.getFullYear()}/${String(today.getMonth() + 1).padStart(2, '0')}/${String(today.getDate()).padStart(2, '0')}`;
 
   return (
     <header
@@ -55,9 +60,11 @@ const Navbar = () => {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button variant="secondary" size="md">
-            Get Started
-          </Button>
+          <Link to={todayTipsUrl}>
+            <Button variant="secondary" size="md">
+              Get Started
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -86,9 +93,11 @@ const Navbar = () => {
                 </li>
               ))}
               <li className="pt-2">
-                <Button variant="secondary" fullWidth>
-                  Get Started
-                </Button>
+                <Link to={todayTipsUrl} onClick={() => setIsMenuOpen(false)}>
+                  <Button variant="secondary" fullWidth>
+                    Get Started
+                  </Button>
+                </Link>
               </li>
             </ul>
           </div>

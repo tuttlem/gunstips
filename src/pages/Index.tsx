@@ -1,5 +1,5 @@
-
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import FeatureCard from '@/components/FeatureCard';
@@ -90,6 +90,10 @@ const Index = () => {
     }
   ];
 
+  // Generate today's date for the tips URL
+  const today = new Date();
+  const todayTipsUrl = `/tips/${today.getFullYear()}/${String(today.getMonth() + 1).padStart(2, '0')}/${String(today.getDate()).padStart(2, '0')}`;
+
   return (
     <div className="min-h-screen overflow-x-hidden">
       <Navbar />
@@ -159,12 +163,12 @@ const Index = () => {
               <p className="body-md text-gray-300 mb-8 max-w-2xl mx-auto">
                 Join thousands of successful bettors who have already discovered the GunsTips advantage. Get started today and see the difference for yourself.
               </p>
-              <a 
-                href="#" 
+              <Link 
+                to={todayTipsUrl}
                 className="inline-block bg-orange-400 text-white py-3 px-8 rounded-md font-medium hover:bg-orange-500 transition-colors"
               >
                 Start Your Free Trial
-              </a>
+              </Link>
             </div>
           </div>
         </section>
