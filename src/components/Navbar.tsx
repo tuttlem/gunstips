@@ -22,9 +22,9 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'Features', href: '#features' },
-    { name: 'Testimonials', href: '#testimonials' },
+    { name: 'Home', href: '/#home' },
+    { name: 'Features', href: '/#features' },
+    { name: 'Testimonials', href: '/#testimonials' },
   ];
 
   // Generate today's date for the tips URL
