@@ -43,7 +43,7 @@ const Tips = () => {
       setError(null);
 
       const dateStr = `${year}-${month?.padStart(2, '0')}-${day?.padStart(2, '0')}`;
-      const url = `https://s3.ap-southeast-2.amazonaws.com/data.gunstips.com/${dateStr}.json`; // <- replace for prod
+      const url = `/data/${dateStr}.json`; // <- replace for prod
 
       try {
         const response = await fetch(url);
